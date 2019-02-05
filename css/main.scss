@@ -3,13 +3,15 @@
 $black: #202121;
 
 *{
+	margin: 0;
+	padding: 0;
 	line-height: 1;
 	font-family: 'Stolzl';
 	font-size: 14px;
 	outline: none;
+	box-sizing: border-box;
 }
 
 body,html{
 	height: 100%;
 }
-
