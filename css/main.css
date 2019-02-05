@@ -1,37 +1,219 @@
-* { margin: 0; padding: 0; line-height: 1; font-family: 'Stolzl'; outline: none; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Stolzl';
+  outline: none;
+  box-sizing: border-box;
+  font-weight: 300;
+}
 
-body, html { height: 100%; font-size: 4.28vw; background: #dedede; }
+body, html {
+  height: 100%;
+  font-size: 4.28vw;
+  background: #dedede;
+}
 
 /*Fonts*/
-h1 { font-size: 2.5rem; line-height: 1.1; font-weight: 500; }
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-weight: 500;
+}
 
 /*Buttons*/
-.btn1 { display: inline-block; text-decoration: none; padding: 1rem 2rem; border-radius: 2rem; background: #034cd2; color: #fff; }
+.btn1 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: #034cd2;
+  color: #fff;
+}
 
 /*Header*/
-header { display: block; position: fixed; display: flex; justify-content: space-between; align-items: center; background: #dede; top: 0; left: 0; width: 100%; height: 60px; z-index: 10; }
-header .menu-btn { float: left; height: 60px; padding: 0rem 1rem; background: #dedede; cursor: pointer; display: flex; align-items: center; justify-content: center; }
-header .menu-btn:hover .ico-menu .bar:after { left: 0; }
-header .menu-btn span { position: relative; font-weight: 300; }
-header .ico-menu { width: 15px; height: 10px; margin-right: 1rem; position: relative; }
-header .ico-menu .bar { position: absolute; width: 100%; height: 2px; background-color: #202121; border-radius: 2px; overflow: hidden; }
-header .ico-menu .bar:after { content: ''; display: block; width: 100%; height: 100%; background: #A6ABAB; position: absolute; top: 0; left: 100%; z-index: 1; transition: 0.3s; }
-header .ico-menu .bar:nth-child(1) { top: 0; }
-header .ico-menu .bar:nth-child(1):after { transition-delay: 0.1s; }
-header .ico-menu .bar:nth-child(2) { top: 4px; }
-header .ico-menu .bar:nth-child(2):after { transition-delay: 0.2s; }
-header .ico-menu .bar:nth-child(3) { top: 8px; }
-header .ico-menu .bar:nth-child(3):after { transition-delay: 0.3s; }
-header .menu-logo { flex-grow: 1; display: flex; justify-content: center; }
-header .menu-logo .logo-img { width: 160px; height: 40px; background: #202121; }
-header .phone { display: none; text-align: center; padding: 0px 15px; }
+header {
+  display: block;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #dede;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+}
+header .menu-btn {
+  float: left;
+  height: 60px;
+  padding: 0rem 1rem;
+  background: #dedede;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .menu-btn:hover .ico-menu .bar:after {
+  left: 0;
+}
+header .menu-btn span {
+  position: relative;
+}
+header .ico-menu {
+  width: 15px;
+  height: 10px;
+  margin-right: 1rem;
+  position: relative;
+}
+header .ico-menu .bar {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #202121;
+  border-radius: 2px;
+  overflow: hidden;
+}
+header .ico-menu .bar:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #A6ABAB;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+  transition: 0.3s;
+}
+header .ico-menu .bar:nth-child(1) {
+  top: 0;
+}
+header .ico-menu .bar:nth-child(1):after {
+  transition-delay: 0.1s;
+}
+header .ico-menu .bar:nth-child(2) {
+  top: 4px;
+}
+header .ico-menu .bar:nth-child(2):after {
+  transition-delay: 0.2s;
+}
+header .ico-menu .bar:nth-child(3) {
+  top: 8px;
+}
+header .ico-menu .bar:nth-child(3):after {
+  transition-delay: 0.3s;
+}
+header .menu-logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+header .menu-logo .logo-img {
+  width: 160px;
+  height: 40px;
+  background: #202121;
+}
+header .phone {
+  display: none;
+  text-align: center;
+  padding: 0px 15px;
+}
 
 /* Main screen*/
-.main-screen { width: 100%; margin-top: 60px; height: 80%; display: flex; position: relative; align-items: center; background: #fff; }
-.main-screen .agency-name { font-size: 2rem; margin-bottom: 1rem; font-weight: 300; }
-.main-screen .main-desc { font-size: 1.5rem; color: #202121; line-height: 1.2; opacity: .4; margin-bottom: 2rem; font-weight: 300; }
-.main-screen .main-label { font-size: 1rem; color: #202121; line-height: 2; opacity: 0.4; margin-bottom: 2rem; }
-.main-screen .soc-box { position: absolute; bottom: 1rem; width: 100%; padding: 0px 15px .5rem; }
-.main-screen .soc-box a { text-decoration: none; color: #202121; padding: 0 0.2rem; }
+.main-screen {
+  width: 100%;
+  margin-top: 60px;
+  height: 80%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background: #fff;
+}
+.main-screen .agency-name {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.main-screen .main-desc {
+  font-size: 1.5rem;
+  color: #202121;
+  line-height: 1.2;
+  opacity: .4;
+  margin-bottom: 2rem;
+}
+.main-screen .main-label {
+  font-size: 1rem;
+  color: #202121;
+  line-height: 2;
+  opacity: 0.4;
+  margin-bottom: 2rem;
+}
+.main-screen .soc-box {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  padding: 0px 15px;
+}
+.main-screen .soc-box a {
+  text-decoration: none;
+  color: #202121;
+  padding: .5rem 1rem;
+}
+.main-screen .soc-box a:nth-child(1) {
+  padding-left: 0px;
+}
+.main-screen .soc-box a:nth-child(2) {
+  border-right: 1px solid #dedede;
+  border-left: 1px solid #dedede;
+}
+.main-screen .soc-box a:nth-child(3) {
+  padding-right: 0px;
+}
+
+/* Services screen*/
+.services-screen {
+  width: 100%;
+  background: #202121;
+  padding: 3rem 0 3rem;
+}
+.services-screen .headline_white {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+.services-screen .services-box {
+  margin-top: 1rem;
+  display: block;
+  height: 250px;
+  border-radius: 1rem;
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+.services-screen .services-box-img {
+  position: static;
+  width: 100%;
+  height: 100%;
+  background: #dedede;
+}
+.services-screen .services-box-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+}
+.services-screen .services-box-head {
+  color: #202121;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.services-screen .services-box-desc {
+  color: #202121;
+  opacity: 0.5;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
 
 /*# sourceMappingURL=main.css.map */
