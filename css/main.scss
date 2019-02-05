@@ -1,28 +1,56 @@
 @import 'path_file.scss';
 
 $black: #202121;
+$blue: #034cd2;
 
 *{
 	margin: 0;
 	padding: 0;
 	line-height: 1;
 	font-family: 'Stolzl';
-	font-size: 14px;
 	outline: none;
 	box-sizing: border-box;
 }
 
 body,html{
 	height: 100%;
+	font-size: 4.28vw;
+	background: #dedede;
 }
+
+
+/*Fonts*/
+h1{
+	font-size: 2.5rem;
+	line-height: 1.1;
+	font-weight: 500;
+}
+
+/*Buttons*/
+.btn1{
+	display: inline-block;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	background: $blue;
+	color: #fff;
+}
+
+
+/*Header*/
 
 header{
 	display: block;
 	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #dede;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 60px;
+	z-index: 10;
 
 	.menu-btn{
 		float: left;
@@ -45,7 +73,7 @@ header{
 	}
 	.ico-menu{
 		width: 15px;
-		height: 13px;
+		height: 10px;
 		margin-right: 1rem;
 		position: relative;
 
@@ -86,6 +114,67 @@ header{
 			&:after{
 				transition-delay:0.3s;
 			}			
+		}
+	}
+	.menu-logo{
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+
+		.logo-img{
+			width: 160px;
+			height: 40px;
+			background:#202121;
+		}
+	}
+	.phone{
+		display: none;
+		text-align: center;
+		padding: 0px 15px;
+	}
+}
+
+
+/* Main screen*/
+
+.main-screen{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	position: relative;
+	align-items: center;
+	background: #fff;
+
+	.agency-name{
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		font-weight: 300;
+	}
+	.main-desc{
+		font-size: 1.5rem;
+		color: #202121;
+		line-height: 1.2;
+		opacity: .4;
+		margin-bottom: 2rem;
+		font-weight: 300;
+	}
+	.main-label{
+		font-size: 1rem;
+		color: #202121;
+		line-height: 2;
+		opacity: 0.4;
+		margin-bottom: 2rem;
+	}
+	.soc-box{
+		position: absolute;
+		bottom: 1rem;
+		width: 100%;
+		padding: 0px 15px .5rem;
+
+		a{
+			text-decoration: none;
+			color: #202121;
+			padding: 0 0.2rem;
 		}
 	}
 }
