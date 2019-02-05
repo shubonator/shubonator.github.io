@@ -3,12 +3,18 @@
 $black: #202121;
 $border: 1px solid #E6EAEA;
 
-
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-family: 'Stolzl';
+	font-size: 14px;
+	box-sizing: border-box;
+	outline: none;
+}
 
 body,html{
 	height: 100%;
-	line-height: 1;
-	font-family: 'Stolzl';
 }
 header{
 	position: fixed;
@@ -71,19 +77,19 @@ header{
 				top: 0;
 				&:after{
 					transition-delay:0.1s;
-				}			
+				}
 			}
 			.bar:nth-child(2){
 				top: 4px;
 				&:after{
 					transition-delay:0.2s;
-				}			
+				}
 			}
 			.bar:nth-child(3){
 				top: 8px;
 				&:after{
 					transition-delay:0.3s;
-				}			
+				}
 			}
 		}
 	}
@@ -116,7 +122,7 @@ header{
 		cursor: pointer;
 		text-decoration: none;
 		height: 100%;
-		padding: 0px 20px; 
+		padding: 0px 20px;
 		line-height: 70px;
 		float: right;
 		background: #4285f4;
@@ -204,7 +210,7 @@ h1 span{
 	top: 70px;
 	opacity: 0.2;
 	z-index: -1;
-	
+
 	@include _lg {
 		overflow: hidden;
 		position: absolute;
@@ -287,7 +293,7 @@ h1 span{
 		font-size: 2rem;
 		padding-bottom: 3rem;
 	}
-	
+
 	.s-box{
 		flex-wrap: wrap;
 		justify-content: space-between;
