@@ -1,85 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-family: 'Stolzl';
-  font-size: 14px;
-  outline: none;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; line-height: 1; font-family: 'Stolzl'; font-size: 14px; outline: none; box-sizing: border-box; }
 
-body, html {
-  height: 100%;
-}
+body, html { height: 100%; }
 
-header {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-}
-header .menu-btn {
-  float: left;
-  height: 60px;
-  padding: 0rem 1rem;
-  background: #dedede;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .menu-btn:hover .ico-menu .bar:after {
-  left: 0;
-}
-header .menu-btn span {
-  position: relative;
-  font-weight: 300;
-}
-header .ico-menu {
-  width: 15px;
-  height: 13px;
-  margin-right: 1rem;
-  position: relative;
-}
-header .ico-menu .bar {
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #202121;
-  border-radius: 2px;
-  overflow: hidden;
-}
-header .ico-menu .bar:after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: #A6ABAB;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  z-index: 1;
-  transition: 0.3s;
-}
-header .ico-menu .bar:nth-child(1) {
-  top: 0;
-}
-header .ico-menu .bar:nth-child(1):after {
-  transition-delay: 0.1s;
-}
-header .ico-menu .bar:nth-child(2) {
-  top: 4px;
-}
-header .ico-menu .bar:nth-child(2):after {
-  transition-delay: 0.2s;
-}
-header .ico-menu .bar:nth-child(3) {
-  top: 8px;
-}
-header .ico-menu .bar:nth-child(3):after {
-  transition-delay: 0.3s;
-}
+header { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 60px; }
+header .menu-btn { float: left; height: 60px; padding: 0rem 1rem; background: #dedede; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+header .menu-btn:hover .ico-menu .bar:after { left: 0; }
+header .menu-btn span { position: relative; font-weight: 300; }
+header .ico-menu { width: 15px; height: 13px; margin-right: 1rem; position: relative; }
+header .ico-menu .bar { position: absolute; width: 100%; height: 2px; background-color: #202121; border-radius: 2px; overflow: hidden; }
+header .ico-menu .bar:after { content: ''; display: block; width: 100%; height: 100%; background: #A6ABAB; position: absolute; top: 0; left: 100%; z-index: 1; transition: 0.3s; }
+header .ico-menu .bar:nth-child(1) { top: 0; }
+header .ico-menu .bar:nth-child(1):after { transition-delay: 0.1s; }
+header .ico-menu .bar:nth-child(2) { top: 4px; }
+header .ico-menu .bar:nth-child(2):after { transition-delay: 0.2s; }
+header .ico-menu .bar:nth-child(3) { top: 8px; }
+header .ico-menu .bar:nth-child(3):after { transition-delay: 0.3s; }
 
 /*# sourceMappingURL=main.css.map */
