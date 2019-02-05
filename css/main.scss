@@ -15,3 +15,77 @@ $black: #202121;
 body,html{
 	height: 100%;
 }
+
+header{
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+
+	.menu-btn{
+		float: left;
+		height: 60px;
+		padding: 0rem 1rem;
+		background: #dedede;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:hover .ico-menu .bar:after{
+			left:0;
+		}
+		span{
+			
+			position: relative;
+			font-weight: 300;
+		}
+	}
+	.ico-menu{
+		width: 15px;
+		height: 13px;
+		margin-right: 1rem;
+		position: relative;
+
+		.bar{
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #202121;
+			border-radius: 2px;
+			overflow: hidden;
+			 &:after{
+			   content: '';
+			   display: block;
+			   width: 100%;
+			   height: 100%;
+			   background: #A6ABAB;
+			   position: absolute;
+			   top: 0;
+			   left: 100%;
+			   z-index: 1;
+			   transition: 0.3s;
+			}
+		}
+		.bar:nth-child(1){
+			top: 0;
+			&:after{
+				transition-delay:0.1s;
+			}			
+		}
+		.bar:nth-child(2){
+			top: 4px;
+			&:after{
+				transition-delay:0.2s;
+			}			
+		}
+		.bar:nth-child(3){
+			top: 8px;
+			&:after{
+				transition-delay:0.3s;
+			}			
+		}
+	}
+}
