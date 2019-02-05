@@ -1,12 +1,19 @@
-* { margin: 0; padding: 0; line-height: 1; font-family: 'Stolzl'; font-size: 14px; outline: none; box-sizing: border-box; }
+* { margin: 0; padding: 0; line-height: 1; font-family: 'Stolzl'; outline: none; box-sizing: border-box; }
 
-body, html { height: 100%; }
+body, html { height: 100%; font-size: 4.28vw; background: #dedede; }
 
-header { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 60px; }
+/*Fonts*/
+h1 { font-size: 2.5rem; line-height: 1.1; font-weight: 500; }
+
+/*Buttons*/
+.btn1 { display: inline-block; text-decoration: none; padding: 1rem 2rem; border-radius: 2rem; background: #034cd2; color: #fff; }
+
+/*Header*/
+header { display: block; position: fixed; display: flex; justify-content: space-between; align-items: center; background: #dede; top: 0; left: 0; width: 100%; height: 60px; z-index: 10; }
 header .menu-btn { float: left; height: 60px; padding: 0rem 1rem; background: #dedede; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 header .menu-btn:hover .ico-menu .bar:after { left: 0; }
 header .menu-btn span { position: relative; font-weight: 300; }
-header .ico-menu { width: 15px; height: 13px; margin-right: 1rem; position: relative; }
+header .ico-menu { width: 15px; height: 10px; margin-right: 1rem; position: relative; }
 header .ico-menu .bar { position: absolute; width: 100%; height: 2px; background-color: #202121; border-radius: 2px; overflow: hidden; }
 header .ico-menu .bar:after { content: ''; display: block; width: 100%; height: 100%; background: #A6ABAB; position: absolute; top: 0; left: 100%; z-index: 1; transition: 0.3s; }
 header .ico-menu .bar:nth-child(1) { top: 0; }
@@ -15,5 +22,16 @@ header .ico-menu .bar:nth-child(2) { top: 4px; }
 header .ico-menu .bar:nth-child(2):after { transition-delay: 0.2s; }
 header .ico-menu .bar:nth-child(3) { top: 8px; }
 header .ico-menu .bar:nth-child(3):after { transition-delay: 0.3s; }
+header .menu-logo { flex-grow: 1; display: flex; justify-content: center; }
+header .menu-logo .logo-img { width: 160px; height: 40px; background: #202121; }
+header .phone { display: none; text-align: center; padding: 0px 15px; }
+
+/* Main screen*/
+.main-screen { width: 100%; height: 70%; display: flex; position: relative; align-items: center; background: #fff; }
+.main-screen .agency-name { font-size: 2rem; margin-bottom: 1rem; font-weight: 300; }
+.main-screen .main-desc { font-size: 1.5rem; color: #202121; line-height: 1.2; opacity: .4; margin-bottom: 2rem; font-weight: 300; }
+.main-screen .main-label { font-size: 1rem; color: #202121; line-height: 2; opacity: 0.4; margin-bottom: 2rem; }
+.main-screen .soc-box { position: absolute; bottom: 1rem; width: 100%; padding: 0px 15px .5rem; }
+.main-screen .soc-box a { text-decoration: none; color: #202121; padding: 0 0.2rem; }
 
 /*# sourceMappingURL=main.css.map */
