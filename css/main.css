@@ -27,7 +27,7 @@ header .menu-logo .logo-img { width: 160px; height: 40px; background: #202121; }
 header .phone { display: none; text-align: center; padding: 0px 15px; }
 
 /* Main screen*/
-.main-screen { width: 100%; height: 70%; display: flex; position: relative; align-items: center; background: #fff; }
+.main-screen { width: 100%; margin-top: 60px; height: 80%; display: flex; position: relative; align-items: center; background: #fff; }
 .main-screen .agency-name { font-size: 2rem; margin-bottom: 1rem; font-weight: 300; }
 .main-screen .main-desc { font-size: 1.5rem; color: #202121; line-height: 1.2; opacity: .4; margin-bottom: 2rem; font-weight: 300; }
 .main-screen .main-label { font-size: 1rem; color: #202121; line-height: 2; opacity: 0.4; margin-bottom: 2rem; }
