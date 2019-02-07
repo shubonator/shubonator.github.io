@@ -13,6 +13,12 @@ body, html {
   background: #dedede;
 }
 
+.container {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /*Fonts*/
 h1 {
   font-size: 2.5rem;
@@ -292,15 +298,28 @@ header .phone {
 
 /* Main screen*/
 .main-screen {
-  width: 100%;
-  margin-top: 60px;
-  height: 75%;
-  display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+  height: 75%;
   background: #fff;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .main-screen {
+    height: calc(100% - 60px);
+  }
 }
 .main-screen .bg-video {
   position: absolute;
@@ -319,6 +338,14 @@ header .phone {
 .main-screen .bg-video video {
   height: 100%;
   opacity: 0.75;
+}
+.main-screen-wrap {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .main-screen-wrap {
+    width: 50%;
+  }
 }
 .main-screen .agency-name {
   font-size: 2rem;
@@ -341,7 +368,6 @@ header .phone {
 .main-screen .soc-box {
   position: absolute;
   bottom: 1rem;
-  width: 100%;
   justify-content: left;
 }
 @media (min-width: 992px) {
@@ -376,9 +402,14 @@ header .phone {
   font-size: 1.5rem;
   padding-bottom: 3rem;
 }
+.services-screen .services-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .services-screen .services-box {
   margin-top: 1rem;
   display: block;
+  position: relative;
   width: 100%;
   height: 250px;
   border-radius: 1rem;
@@ -389,7 +420,16 @@ header .phone {
 @media (min-width: 992px) {
   .services-screen .services-box {
     margin-top: 0rem;
+    width: calc(50% - 0.5rem);
   }
+}
+.services-screen .services-box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .services-screen .services-box-img {
   position: static;
@@ -402,6 +442,7 @@ header .phone {
   top: 0;
   left: 0;
   padding: 2rem;
+  z-index: 1;
 }
 .services-screen .services-box-head {
   color: #202121;
@@ -420,20 +461,14 @@ header .phone {
   margin-top: 0;
 }
 @media (min-width: 992px) {
-  .services-screen .col:nth-child(3), .services-screen .col:nth-child(4) {
+  .services-screen .services-box:nth-child(2), .services-screen .services-box:nth-child(4) {
+    margin-left: 1rem;
+    float: right;
+  }
+}
+@media (min-width: 992px) {
+  .services-screen .services-box:nth-child(3), .services-screen .services-box:nth-child(4) {
     margin-top: 1rem;
-  }
-}
-@media (min-width: 992px) {
-  .services-screen .col:nth-child(1), .services-screen .col:nth-child(3) {
-    padding-left: 1rem;
-    padding-right: 0.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .services-screen .col:nth-child(2), .services-screen .col:nth-child(4) {
-    padding-right: 1rem;
-    padding-left: 0.5rem;
   }
 }
 
