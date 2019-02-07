@@ -17,7 +17,11 @@ body,html{
 	height: 100%;
 	background: #dedede;
 }
-
+.container{
+	width: 90%;
+	margin-right: auto;
+  	margin-left: auto;
+}
 
 /*Fonts*/
 h1{
@@ -307,15 +311,27 @@ header{
 /* Main screen*/
 
 .main-screen{
-	width: 100%;
-	margin-top: 60px;
-	height: 75%;
-	display: flex;
 	position: relative;
-	align-items: center;
-	justify-content: center;
-	flex-flow: column;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+	display: flex;
+	margin-top: 60px;
+    width: 100%;
+	height: 75%;
 	background: #fff;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+	align-items: center;
+	
+	@include _lg {
+		height: calc(100% - 60px);
+	}
 
 	.bg-video{
 		position: absolute;
@@ -333,6 +349,14 @@ header{
 		& video{
 			height: 100%;
 			opacity: 0.75;
+		}
+	}
+
+	&-wrap{
+		width: 100%;
+
+		@include _lg {
+			width: 50%;
 		}
 	}
 
@@ -357,7 +381,6 @@ header{
 	.soc-box{
 		position: absolute;
 		bottom: 1rem;
-		width: 100%;
 		justify-content: left;
 
 		@include _lg {
@@ -394,9 +417,14 @@ header{
 		font-size: 1.5rem;
 		padding-bottom: 3rem;
 	}
+	.services-wrap{
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.services-box{
 		margin-top: 1rem;
 		display: block;
+		position: relative;
 		width: 100%;
 		height: 250px;
 		border-radius: 1rem;
@@ -406,6 +434,16 @@ header{
 
 		@include _lg {
 			margin-top: 0rem;
+			width: calc(50% - 0.5rem);
+		}
+
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
 		}
 
 		&-img{
@@ -420,6 +458,7 @@ header{
 			top: 0;
 			left: 0;
 			padding: 2rem;
+			z-index: 1;
 		}
 
 		&-head{
@@ -438,25 +477,23 @@ header{
 	}
 	.services-box:nth-child(1){
 		margin-top: 0;
+	}	
+	.services-box:nth-child(1),.services-box:nth-child(3){
+		@include _lg {
+			
+		}
 	}
-	.col:nth-child(3),.col:nth-child(4){
+	.services-box:nth-child(2),.services-box:nth-child(4){
+		@include _lg {
+			margin-left: 1rem;
+			float: right;
+		}
+	}
+	.services-box:nth-child(3),.services-box:nth-child(4){
 		@include _lg {
 			margin-top: 1rem;
 		}
 	}
-	.col:nth-child(1),.col:nth-child(3){
-		@include _lg {
-			padding-left: 1rem;
-			padding-right: 0.5rem;
-		}
-	}
-	.col:nth-child(2),.col:nth-child(4){
-		@include _lg {
-			padding-right: 1rem;
-			padding-left: 0.5rem;
-		}
-	}
-	
 }
 
 /* Case screen*/
