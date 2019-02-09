@@ -7,7 +7,7 @@ $blue: #034cd2;
 	margin: 0;
 	padding: 0;
 	line-height: 1;
-	font-family: 'Stolzl';
+	font-family: 'Stolzl', sans-serif;
 	outline: none;
 	box-sizing: border-box;
 	font-weight: 300;
@@ -578,21 +578,3 @@ header{
 
 /* Case screen*/
 
-.form-container{
-	position: fixed;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	background: #fff;
-	z-index: 20;
-	
-	input{
-		display: block;
-		padding: 1rem;
-		margin-bottom: 2rem;
-	}
-}
