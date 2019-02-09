@@ -362,8 +362,12 @@ header{
 	}
 
 	.agency-name{
-		font-size: 2rem;
+		font-size: 1.9rem;
 		margin-bottom: 1rem;
+
+		@include _lg {
+			font-size: 2.5rem;
+		}
 	}
 	.main-desc{
 		font-size: 1.5rem;
