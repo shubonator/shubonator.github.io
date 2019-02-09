@@ -365,8 +365,8 @@ header .phone {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-top: 0;
-  height: 80%;
+  margin-top: 0px;
+  height: 90%;
   background: #fff;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -377,7 +377,6 @@ header .phone {
 }
 @media (min-width: 992px) {
   .main-screen {
-    margin-top: 0px;
     height: 100%;
   }
 }

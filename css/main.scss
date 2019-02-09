@@ -318,8 +318,8 @@ header{
     display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	margin-top: 0;
-	height: 80%;
+	margin-top: 0px;
+	height: 90%;
 	background: #fff;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -331,7 +331,6 @@ header{
 	align-items: center;
 	
 	@include _lg {
-		margin-top: 0px;
 		height: 100%;
 	}
 
