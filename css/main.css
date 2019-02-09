@@ -40,7 +40,7 @@ h1 {
 /*Header*/
 header {
   display: block;
-  position: absolute;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
