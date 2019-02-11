@@ -5,11 +5,21 @@
 
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
+$email = $_POST['user_email'];
+$sity = $_POST['user_sity'];
+$company = $_POST['user_company'];
+$link = $_POST['user_link'];
+$comment = $_POST['user_comment'];
 $token = "610565106:AAGt9QCiBUxVaDfPHl0yVUQX81qMz2717qs";
 $chat_id = "-295678560";
 $arr = array(
   'Имя пользователя: ' => $name,
-  'Телефон: ' => $phone
+  'Телефон: ' => $phone,
+  'E-mail: ' => $email,
+  'Город: ' => $sity,
+  'Компания: ' => $company,
+  'Ссылка: ' => $link,
+  'Коментарий: ' => $comment
 );
 
 foreach($arr as $key => $value) {

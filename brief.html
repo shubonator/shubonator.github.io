@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
 	<title>Agency website</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!--Css style-->
@@ -10,6 +11,23 @@
 	<link rel="stylesheet" href="css/fonts.css">
 </head>
 <body>
+    <!--Header-->
+    <header>
+		<a href="index.html" class="menu-logo">
+			<div class="logo-img">sbl.</div>
+		</a>
+		<div class="phone">
+			<p>+7(999)260-57-19</p>
+			<span>Коммерческий отдел</span>
+		</div>
+		<div class="menu-btn">
+			<div class="ico-menu">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+		</div>
+	</header>	
     <!--Menu-->
     <div class="menu">
         <div class="menu-box-btn">
@@ -18,7 +36,7 @@
                 <div class="bar"></div>
             </div>
         </div>
-        <a href="" class="menu-box">
+        <a href="index.html" class="menu-box">
             <div class="menu-box-content menu-box-content-1">
                 <p class="menu-box-content-head">Главная</p>
             </div>
@@ -39,35 +57,29 @@
             </div>
         </a>
     </div>  
-    <!--Header-->
-    <header>
-        <div class="menu-btn">
-            <div class="ico-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <span>Меню</span>
-        </div>
-        <a href="index.html" class="menu-logo">
-            <div class="logo-img">sbl.</div>
-        </a>
-        <div class="phone">
-            <p>+7(999)260-57-19</p>
-            <span>Коммерческий отдел</span>
-        </div>
-    </header>
     <!--Form-->
-    <div class="form-container">
-        <form action="telegram.php" method="POST">
-            <p>Ваше имя</p>
-            <input type="text" name="user_name">
-            <p>Ваш телефон</p>
-            <input type="text"	name="user_phone">
-            <input type="submit">
-        </form>			
+    <div class="brief-screen">
+        <div class="container">
+            <p class="page-heading">Заполните Бриф</p>
+            <p class="page-label">Оставьте заявку, или свяжитесь с<br>нами по контактному телефону:<br><span>+7(999)260-57-19</span></p>
+            <p class="page-heading">Контактные данные:</p>
+            <div class="form-container">
+                <form action="telegram.php" method="POST">
+                    <input class="input" type="text" name="user_name" autocomplete="off" placeholder="Имя*" required>
+                    <input id="phone" class="input" type="text" name="user_phone" autocomplete="off" placeholder="Телефон*" required>
+                    <input class="input" type="text" name="user_email" autocomplete="off" placeholder="E-mail">
+                    <input class="input" type="text" name="user_sity" autocomplete="off" placeholder="Город">
+                    <input class="input" type="text" name="user_company" autocomplete="off" placeholder="Компания">
+                    <input class="input" type="text" name="user_link" autocomplete="off" placeholder="Ссылка на сайт">
+                    <input class="input-comment" type="text" name="user_comment" autocomplete="off" placeholder="Комментарий">
+                    <button class="submit btn1" type="submit">Отправить бриф</button>
+                </form>			
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/main.js"></script>      
 </body>
 </html>
